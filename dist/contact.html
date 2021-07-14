@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiran's Creations | Welcome </title>
+    <!-- Font Styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome Styles -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        referrerpolicy="no-referrer" />
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header id="header" class="h-100">
+        <div class="container">
+            <nav id="main-nav">
+                <img class="logo" src="./images/logo/logo_dark.jpg" alt="Kiran's Creations Logo">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="work.html">Work</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link current" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2>Contact <span class="lead">Us</span></h2>
+            <form class="contact-form mt-2">
+                <div class="form-area">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name" placeholder="Enter Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="name">Phone No.</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Enter Phone No." pattern="[0-9]{10}"
+                            required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="name">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Enter Email" required>
+                </div>
+                <div class="form-group">
+                    <label for="name">Message</label>
+                    <textarea name="message" id="" cols="30" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn-main">SUBMIT</button>
+            </form>
+        </div>
+    </section>
+
+    <footer id="footer" class="py-5 bg-light">
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    <img class="footer-content-logo" src="./images/logo/logo_dark.jpg" alt="Kirans Creations Logo">
+                </div>
+                <div>
+                    <p>Ad<span class="lead">dre</span>ss</p>
+                    <p class="pt-1">xyz, Canada Corder, Nashik - 425107</p>
+                </div>
+                <div>
+                    <p>P<span class="lead">hon</span>e</p>
+                    <p class="pt-1">+91 9422253774</p>
+                </div>
+                <div>
+                    <p>Foll<span class="lead">ow us</span> on</p>
+                    <ul class="footer-content-socials pt-1">
+                        <li><a href="#facebook"><i class="fab fa-facebook fa-2x"></i></a></li>
+                        <li><a href="#instagram"><i class="fab fa-instagram fa-2x"></i></a></li>
+                        <li><a href="#twitter"><i class="fab fa-twitter fa-2x"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/typewriter.js"></script>
+</body>
+
+</html>
