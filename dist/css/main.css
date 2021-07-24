@@ -439,6 +439,11 @@ body {
   #close {
     display: block; } }
 
+@media only screen and (max-height: 731px) {
+  /* Header content stylings */
+  .header-content {
+    height: 68vh; } }
+
 @media only screen and (min-width: 601px) {
   .container {
     width: 85%; } }
