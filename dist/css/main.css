@@ -17,7 +17,7 @@ ul {
 }
 
 h1 {
-  font-size: 5rem;
+  font-size: 3rem;
   line-height: 1.5;
   font-weight: 600;
 }
@@ -29,13 +29,13 @@ h2 {
 }
 
 p {
-  font-size: 1.2rem;
+  font-size: 1rem;
   line-height: 1.7;
 }
 
 a {
   text-decoration: none;
-  color: #161616;
+  color: #1F2937;
   transition: color .5s ease;
 }
 
@@ -237,6 +237,10 @@ a {
   margin-left: 1rem;
 }
 
+.ml-01 {
+  margin-left: 0.1rem;
+}
+
 /* Background classes */
 .bg-dark {
   background: #161616;
@@ -255,13 +259,14 @@ h-100 {
 
 /* Text-color classes */
 .text-para {
-  font-size: 1.2rem;
+  font-size: 1rem;
   line-height: 1.7;
   text-align: justify;
+  color: #1F2937;
 }
 
 .text-grey {
-  color: #DDDDDD;
+  color: #1F2937;
 }
 
 .lead {
@@ -335,6 +340,7 @@ textarea:focus-visible {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  font-size: 0.9rem;
 }
 
 /* Card Design classes */
@@ -363,6 +369,12 @@ body {
 }
 
 /* Navbar Stylings */
+.navbar {
+  background-color: #F8F8F8;
+  padding: 0.3rem 0;
+  color: #1F2937;
+}
+
 #main-nav .logo,
 #main-nav .menu-icon {
   width: 80px;
@@ -371,27 +383,21 @@ body {
 #main-nav .nav-list {
   display: flex;
   flex-direction: row;
-}
-
-#main-nav .nav-list .nav-item {
-  padding: 1rem;
+  gap: 1.5rem;
 }
 
 #main-nav .nav-list .nav-link {
   text-decoration: none;
   padding-bottom: .5rem;
-  color: #161616;
-  border-bottom: 2px solid transparent;
-  border-radius: 1px;
 }
 
 #main-nav .nav-list .nav-link:hover {
   cursor: pointer;
-  border-bottom: 2px solid #161616;
+  color: #CBAB4B;
 }
 
 #main-nav .nav-list .current {
-  border-bottom: 2px solid #CBAB4B !important;
+  color: #CBAB4B !important;
 }
 
 #main-nav .nav-list .menu {
@@ -399,28 +405,30 @@ body {
 }
 
 #main-nav .nav-list .menu:hover .nav-menu {
-  display: block;
+  display: flex;
 }
 
 #main-nav .nav-list .nav-menu {
+  display: none;
+  flex-direction: column;
   position: absolute;
   background: #ffffff;
-  width: 250px;
   box-shadow: 5px 2px 10px rgba(0, 0, 0, 0.3);
   border-radius: 4px;
-  top: 55px;
+  width: 200px;
+  top: 28px;
   left: -5px;
-  display: none;
 }
 
 #main-nav .nav-list .nav-menu .menu-link {
-  padding: 1rem;
+  padding: 0.5rem 1rem;
   display: block;
-  transition: background .5s ease;
+  transition: color .5s ease;
 }
 
 #main-nav .nav-list .nav-menu .menu-link:hover {
-  background: #CBAB4B;
+  cursor: pointer;
+  color: #CBAB4B;
 }
 
 /* Home page header content */
@@ -468,12 +476,32 @@ body {
 }
 
 /* Footer */
+.footer-info {
+  font-size: 0.9rem;
+  color: #1F2937;
+  padding-top: 0.5rem;
+}
+
 .footer-content {
   text-align: center;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.footer-content .address {
+  flex-basis: 0;
+  flex-grow: 3;
+}
+
+.footer-content .phone_number {
+  flex-basis: 0;
+  flex-grow: 1;
 }
 
 .footer-content-logo {
-  width: 150px;
+  width: 120px;
 }
 
 .footer-content-title {
@@ -484,15 +512,11 @@ body {
 .footer-content-socials {
   display: flex;
   justify-content: center;
+  gap: 0.8rem;
 }
 
 .footer-content-socials .fab {
-  color: #161616;
   transition: color .5s ease;
-}
-
-.footer-content-socials a {
-  padding: 0 1rem;
 }
 
 .footer-content-socials a:hover .fab {
@@ -510,6 +534,13 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+  .py-4 {
+    padding: 2rem 0;
+  }
+
+  .service-section h1 {
+    font-size: 2rem;
+  }
 
   /* Navbar Stylings */
   #main-nav .logo,
@@ -518,61 +549,34 @@ body {
   }
 
   #main-nav .nav-list {
-    display: flex;
     flex-direction: column;
     position: absolute;
-    top: 80px;
+    top: 59px;
     left: 0px;
     background: #F8F8F8;
     width: 100%;
-    padding: 0px 1rem;
+    padding: 1rem 1rem;
     visibility: hidden;
-  }
-
-  #main-nav .nav-list .nav-item {
-    padding: 1rem;
+    gap: 1rem;
   }
 
   #main-nav .nav-list .nav-link {
     text-decoration: none;
     padding-bottom: .5rem;
-    color: #161616;
-    border-bottom: 2px solid transparent;
-    border-radius: 1px;
-  }
-
-  #main-nav .nav-list .nav-link:hover {
-    cursor: pointer;
-    border-bottom: 2px solid #161616;
-  }
-
-  #main-nav .nav-list .current {
-    border-bottom: 2px solid #CBAB4B !important;
+    color: #1F2937;
   }
 
   #main-nav .nav-list .menu:hover .nav-menu {
-    display: block;
+    display: flex;
   }
 
   #main-nav .nav-list .nav-menu {
+    box-shadow: none;
     position: relative;
-    background: #ffffff;
     width: 100%;
-    box-shadow: 5px 2px 10px rgba(0, 0, 0, 0.3);
-    border-radius: 4px;
     display: none;
     top: 5px;
     left: 0;
-  }
-
-  #main-nav .nav-list .nav-menu .menu-link {
-    padding: 1rem;
-    display: block;
-    transition: background .5s ease;
-  }
-
-  #main-nav .nav-list .nav-menu .menu-link:hover {
-    background: #CBAB4B;
   }
 
   /* Header content stylings */
@@ -585,28 +589,16 @@ body {
     padding: 2rem 0 2rem 0;
   }
 
-  /* Category and work cards */
-  .card {
-    margin-bottom: 2rem;
-  }
-
   /* Footer Stylings */
   .footer-content {
     flex-direction: column;
-  }
-
-  .footer-content div {
-    margin-bottom: 2rem;
-  }
-
-  .footer-content div:last-child {
-    margin-bottom: 0rem;
+    align-items: center;
   }
 
   /* Utilities stylings */
-  h1 {
+  /* h1 {
     font-size: 3rem;
-  }
+  } */
 
   h2 {
     font-size: 2.5rem;
